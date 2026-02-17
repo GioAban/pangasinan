@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // enables static HTML export
+  basePath: '/pangasinan-heritage', // replace with your GitHub repo name
+  images: {
+    unoptimized: true, // optional, prevents errors with next/image
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
