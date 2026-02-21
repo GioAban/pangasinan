@@ -29,7 +29,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    "src/app/dashboard/profile/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

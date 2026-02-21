@@ -1,7 +1,19 @@
-const Home = () => {
-  return <h1 className="p-2 px-2 text-4xl font-bold">
-    Hello world!
-    </h1>;
-};
+import { Fragment } from "react";
+import HomeHero from "./hero";
+import HomeContact from "./(public)/contact/page";
+import Container from "./container";
+import { getDbData } from "@/lib/data-fetcher";
+import HomeHeritage from "./components/organisms/heritage-showcase";
 
-export default Home;
+export default async function Home() {
+  const data = await getDbData();
+
+  return (
+    <Fragment>
+      <HomeHero />
+      <Container>
+        <HomeHeritage spots={data.spots} />
+      </Container>
+    </Fragment>
+  );
+}
