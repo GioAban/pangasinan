@@ -2,7 +2,6 @@
 const nextConfig = {
   output: "export",
   basePath: "/pangasinan-heritage",
-  assetPrefix: "/pangasinan-heritage/",
   trailingSlash: true,
   images: {
     unoptimized: true,
