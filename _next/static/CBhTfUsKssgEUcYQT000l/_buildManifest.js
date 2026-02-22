@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/pangasinan-heritage//_next/:path+",
-        "destination": "/pangasinan-heritage/_next/:path+"
+        "source": "/pangasinan//_next/:path+",
+        "destination": "/pangasinan/_next/:path+"
       }
     ],
     "fallback": []
