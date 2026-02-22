@@ -4,7 +4,7 @@ import Button from "./components/atoms/Button";
 import Container from "./components/molecules/container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import image1 from "../../public/images/cover_page/hundred_island.jpg";
+<img src="/pangasinan-heritage/images/cover_page/hundred_island.jpg" />
 import image2 from "../../public/images/cover_page/bolinao_light_house.jpg";
 import image3 from "../../public/images/cover_page/hostrping.jpg";
 const images = [image1, image2, image3];
