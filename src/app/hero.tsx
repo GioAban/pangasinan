@@ -1,17 +1,14 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Button from "./components/atoms/Button";
 import Container from "./components/molecules/container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-
 const images = [
   "/images/cover_page/hundred_island.jpg",
   "/images/cover_page/bolinao_light_house.jpg",
   "/images/cover_page/hostrping.jpg",
 ];
-
 const HomeHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
