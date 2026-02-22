@@ -1,31 +1,39 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Button from "./components/atoms/Button";
 import Container from "./components/molecules/container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import image1 from "../../public/images/cover_page/hundred_island.jpg";
-import image2 from "../../public/images/cover_page/bolinao_light_house.jpg";
-import image3 from "../../public/images/cover_page/hostrping.jpg";
-const images = [image1, image2, image3];
+
+const images = [
+  "/images/cover_page/hundred_island.jpg",
+  "/images/cover_page/bolinao_light_house.jpg",
+  "/images/cover_page/hostrping.jpg",
+];
+
 const HomeHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000);
+
     return () => clearInterval(timer);
   }, []);
+
   return (
     <section className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-slate-950">
+      {/* Background Slider */}
       <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, scale: 1.15 }}
+            initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 2.5, ease: [0.4, 0, 0.2, 1] }}
+            exit={{ opacity: 0, scale: 1.05 }}
+            transition={{ duration: 1.8, ease: "easeInOut" }}
             className="absolute inset-0 h-full w-full"
           >
             <Image
@@ -33,11 +41,17 @@ const HomeHero = () => {
               alt="Pangasinan Destination"
               fill
               priority
+              sizes="100vw"
               className="object-cover"
             />
           </motion.div>
         </AnimatePresence>
+
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
       </div>
+
+      {/* Content */}
       <Container className="relative z-10 w-full pt-20">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <motion.div
@@ -49,6 +63,7 @@ const HomeHero = () => {
               Discover the Salt Capital
             </span>
           </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,6 +75,7 @@ const HomeHero = () => {
               HERITAGE
             </span>
           </motion.h1>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -72,6 +88,7 @@ const HomeHero = () => {
             </span>
             . Dive into the culture of the north.
           </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -81,6 +98,7 @@ const HomeHero = () => {
             <Button href="/blogs" variant="solid">
               READ OUR BLOGS
             </Button>
+
             <Button href="/#heritage" variant="outline">
               EXPLORE SITES
             </Button>
@@ -90,4 +108,5 @@ const HomeHero = () => {
     </section>
   );
 };
+
 export default HomeHero;
