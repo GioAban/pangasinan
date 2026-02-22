@@ -4,11 +4,15 @@ import Button from "./components/atoms/Button";
 import Container from "./components/molecules/container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const images = [
-  "/images/cover_page/hundred_island.jpg",
-  "/images/cover_page/bolinao_light_house.jpg",
-  "/images/cover_page/hostrping.jpg",
+  `${BASE_PATH}/images/cover_page/hundred_island.jpg`,
+  `${BASE_PATH}/images/cover_page/bolinao_light_house.jpg`,
+  `${BASE_PATH}/images/cover_page/hostrping.jpg`,
 ];
+
 const HomeHero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,7 +20,6 @@ const HomeHero = () => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000);
-
     return () => clearInterval(timer);
   }, []);
 
@@ -34,7 +37,7 @@ const HomeHero = () => {
             className="absolute inset-0 h-full w-full"
           >
             <Image
-              src="https://gioaban.github.io/pangasinan//images/cover_page/hundred_island.jpg"
+              src="https://gioaban.github.io/pangasinan/images/cover_page/hundred_island.jpg"
               alt="Pangasinan Destination"
               fill
               priority

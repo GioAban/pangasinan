@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: "/pangasinan-heritage",
+  output: "export", // generate static HTML
+  basePath: "/pangasinan-heritage", // prefix sa GitHub Pages
+  assetPrefix: "/pangasinan-heritage/",
   trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
+  images: { unoptimized: true }, // allow external images without optimization
 };
 
 module.exports = nextConfig;

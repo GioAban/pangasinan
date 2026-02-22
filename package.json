@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "json-server": "json-server --watch db.json --port 5600",
     "dev:all": "concurrently \"json-server db.json --port 5600\" \"next dev\"",
-    "predeploy": "npm run build",
+    "export": "next export",
+    "predeploy": "next build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.24",
     "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
     "css": "^3.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
