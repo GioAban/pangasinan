@@ -37,8 +37,9 @@ const HomeHero = () => {
             className="absolute inset-0 h-full w-full"
           >
             <Image
-              src="https://gioaban.github.io/pangasinan/images/cover_page/hundred_island.jpg"
-              alt="Pangasinan Destination"
+              // FIXED: Dynamic src instead of hardcoded link
+              src={images[currentIndex]}
+              alt={`Pangasinan Destination ${currentIndex + 1}`}
               fill
               priority
               sizes="100vw"
@@ -47,8 +48,8 @@ const HomeHero = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        {/* Dark overlay - placed outside AnimatePresence to keep it constant */}
+        <div className="z-1 absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content */}
