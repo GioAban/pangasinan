@@ -20,7 +20,7 @@ export default async function ViewSpotPage({ params }: PageProps) {
     (s: Spot) => s.id.toString() === resolvedParams.id,
   );
   if (!spot) return notFound();
-  const basePath = "/pangasinan-heritage";
+  const basePath = "/pangasinan";
   const imageSrc = spot.image.startsWith("http")
     ? spot.image
     : `${basePath}/${spot.image.replace(/^\//, "")}`;

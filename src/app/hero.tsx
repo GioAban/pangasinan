@@ -38,7 +38,7 @@ const HomeHero = () => {
           >
             <Image
               // FIXED: Dynamic src instead of hardcoded link
-              src="https://gioaban.github.io/pangasinan/images/cover_page/hundred_island.jpg"
+              src={images[currentIndex]}
               alt={`Pangasinan Destination ${currentIndex + 1}`}
               fill
               priority

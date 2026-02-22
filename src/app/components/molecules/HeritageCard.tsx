@@ -3,7 +3,7 @@ import Link from "next/link"; // Import Link
 import { Spot } from "@/types";
 
 export const HeritageCard = ({ spot }: { spot: Spot }) => {
-  const basePath = "/pangasinan-heritage";
+  const basePath = "/pangasinan";
   const imageSrc = spot.image.startsWith("http")
     ? spot.image
     : `${basePath}/${spot.image.replace(/^\//, "")}`;

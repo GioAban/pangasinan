@@ -9,7 +9,7 @@ export default function NewsCarousel({ articles }: { articles: Article[] }) {
   const featured = articles[0];
   const listNews = articles.slice(1);
   const containerRef = useRef<HTMLDivElement>(null);
-  const basePath = "/pangasinan-heritage";
+  const basePath = "/pangasinan";
   const getPath = (path: string) => {
     const cleanPath = path.startsWith("/") ? path.slice(1) : path;
     return `${basePath}/${cleanPath}`;
