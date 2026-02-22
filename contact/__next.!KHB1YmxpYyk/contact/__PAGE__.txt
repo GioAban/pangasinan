@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[47257,["/pangasinan/_next/static/chunks/ff1a16fafef87110.js","/pangasinan/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
-3:I[51639,["/pangasinan/_next/static/chunks/7b9ac8f5e073e2e3.js","/pangasinan/_next/static/chunks/cfaf210658a6f7ad.js","/pangasinan/_next/static/chunks/4179528f398ad9c7.js"],"default"]
-6:I[97367,["/pangasinan/_next/static/chunks/ff1a16fafef87110.js","/pangasinan/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+2:I[47257,["https://gioaban.github.io/pangasinan/_next/static/chunks/ff1a16fafef87110.js","https://gioaban.github.io/pangasinan/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
+3:I[51639,["https://gioaban.github.io/pangasinan/_next/static/chunks/f9ae1cea580b57d7.js","https://gioaban.github.io/pangasinan/_next/static/chunks/cfaf210658a6f7ad.js","https://gioaban.github.io/pangasinan/_next/static/chunks/4179528f398ad9c7.js"],"default"]
+6:I[97367,["https://gioaban.github.io/pangasinan/_next/static/chunks/ff1a16fafef87110.js","https://gioaban.github.io/pangasinan/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"lNvtqkweC_WBKhfj8K7X_","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/pangasinan/_next/static/chunks/cfaf210658a6f7ad.js","async":true}],["$","script","script-1",{"src":"/pangasinan/_next/static/chunks/4179528f398ad9c7.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"2fqdA9wwLsfuSN_Nv9TCl","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"https://gioaban.github.io/pangasinan/_next/static/chunks/cfaf210658a6f7ad.js","async":true}],["$","script","script-1",{"src":"https://gioaban.github.io/pangasinan/_next/static/chunks/4179528f398ad9c7.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
