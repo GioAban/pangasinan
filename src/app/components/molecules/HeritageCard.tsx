@@ -1,12 +1,17 @@
 import Image from "next/image";
+import Link from "next/link"; // Import Link
 import { Spot } from "@/types";
+
 export const HeritageCard = ({ spot }: { spot: Spot }) => {
   const basePath = "/pangasinan-heritage";
   const imageSrc = spot.image.startsWith("http")
     ? spot.image
     : `${basePath}/${spot.image.replace(/^\//, "")}`;
   return (
-    <div className="group w-80 flex-shrink-0">
+    <Link
+      href={`/view-spot/${spot.id}`}
+      className="group block w-80 flex-shrink-0"
+    >
       <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:shadow-xl">
         <div className="relative h-52 w-full overflow-hidden">
           <Image
@@ -29,11 +34,11 @@ export const HeritageCard = ({ spot }: { spot: Spot }) => {
           <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-500">
             {spot.description}
           </p>
-          <button className="mt-4 text-xs font-bold uppercase tracking-wider text-blue-500 transition-colors hover:text-blue-700">
+          <div className="mt-4 text-xs font-bold uppercase tracking-wider text-blue-500 transition-colors group-hover:text-blue-700">
             Discover More →
-          </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

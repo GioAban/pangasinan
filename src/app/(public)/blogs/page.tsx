@@ -1,6 +1,7 @@
 import { getDbData } from "@/lib/data-fetcher";
-import { Badge } from "../../components/atoms/badge";
-import NewsCarousel from "../../components/organisms/news-carousel";
+import { Badge } from "../../components/atoms/Badge";
+import NewsCarousel from "../../components/organisms/NewsCarousel";
+import BackButton from "@/app/components/atoms/BackButton";
 export default async function Page() {
   const data = await getDbData();
   const articles = data.articles;
@@ -9,6 +10,7 @@ export default async function Page() {
       <header className="mb-10">
         <section id="about" className="bg-white py-12 lg:py-32">
           <div className="container mx-auto px-4">
+            <BackButton variant="blue" />
             <div className="mb-12 text-left">
               <Badge>News Updates</Badge>
               <h2 className="mt-4 text-4xl font-bold tracking-tight text-blue-500 lg:text-7xl">

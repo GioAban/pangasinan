@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import { getDbData } from "@/lib/data-fetcher";
 import Header from "./components/organisms/header";
 import Footer from "./components/organisms/footer";
-import { getDbData } from "@/lib/data-fetcher";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "Pangasinan Heritage",

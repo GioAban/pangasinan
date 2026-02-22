@@ -14,6 +14,7 @@ export interface Spot {
   description: string;
   image: string;
   category: string;
+  mapUrl?: string;
 }
 export interface DbData {
   articles: Article[];

@@ -1,17 +1,17 @@
 "use client";
 
 import { Facebook, Instagram, Youtube } from "lucide-react";
-import { FooterNav } from "../molecules/footer-nav";
-import { FooterIcon } from "../atoms/footer-icon";
-import SeePangasinanIcon from "../atoms/see-pagasinan-icon";
-import ProvincialLogoIcon from "../atoms/provincial-logo-icon";
+import { FooterNav } from "../molecules/FooterNav";
+import { FooterIcon } from "../atoms/FooterIcon";
+import SeePangasinanIcon from "../atoms/SeePagasinanIcon";
+import ProvincialLogoIcon from "../atoms/ProvincialLogo";
 interface Article {
   id: string | number;
   title: string;
   slug?: string;
 }
 interface FooterProps {
-  articles?: Article[]; 
+  articles?: Article[];
 }
 const Footer = ({ articles = [] }: FooterProps) => {
   const currentYear = new Date().getFullYear();
@@ -30,13 +30,13 @@ const Footer = ({ articles = [] }: FooterProps) => {
           </div>
           <FooterNav />
           <div className="flex gap-4">
-            <FooterIcon href="https://facebook.com">
+            <FooterIcon href="https://www.facebook.com/ProvinceOfPangasinanOfficial/">
               <Facebook size={20} />
             </FooterIcon>
-            <FooterIcon href="https://instagram.com">
+            <FooterIcon href="https://www.instagram.com/seepangasinan/?hl=en">
               <Instagram size={20} />
             </FooterIcon>
-            <FooterIcon href="https://youtube.com">
+            <FooterIcon href="https://www.youtube.com/@seepangasinan1573">
               <Youtube size={20} />
             </FooterIcon>
           </div>

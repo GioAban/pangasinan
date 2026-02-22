@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Button from "./components/atoms/button";
-import Container from "./container";
+import Button from "./components/atoms/Button";
+import Container from "./components/molecules/container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import image1 from "../../public/images/cover_page/hundred_island.jpg";

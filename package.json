@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gioaban.github.io/pangasinan-heritage",
   "name": "pangasinan-heritage",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +12,7 @@
     "json-server": "json-server --watch db.json --port 5600",
     "dev:all": "concurrently \"json-server db.json --port 5600\" \"next dev\"",
     "predeploy": "npm run build",
-    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "framer-motion": "^12.23.22",

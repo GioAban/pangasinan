@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import HomeHero from "./hero";
-import Container from "./container";
+import Container from "./components/molecules/container";
 import { getDbData } from "@/lib/data-fetcher";
-import HomeHeritage from "./components/organisms/heritage-showcase";
+import HomeHeritage from "./components/organisms/HeritageShowcase";
 export default async function Home() {
   const data = await getDbData();
   return (

@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { CarouselButton } from "../atoms/carousel-button";
+import { CarouselButton } from "../atoms/Carousel-button";
 interface Props {
   title: string;
   badge: string;

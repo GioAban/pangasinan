@@ -3,8 +3,8 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Article } from "@/types";
-import { Card } from "../molecules/card";
-import { CarouselButton } from "../atoms/carousel-button";
+import { Card } from "../atoms/card";
+import { CarouselButton } from "../atoms/Carousel-button";
 export default function NewsCarousel({ articles }: { articles: Article[] }) {
   const featured = articles[0];
   const listNews = articles.slice(1);
@@ -86,7 +86,11 @@ export default function NewsCarousel({ articles }: { articles: Article[] }) {
                   {article.title}
                 </h4>
                 <p className="mt-2 text-xs text-slate-500">
-                  {new Date(article.createdAt).toLocaleDateString()}
+                  {new Date(article.createdAt).toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
                 </p>
               </Card>
             </motion.div>

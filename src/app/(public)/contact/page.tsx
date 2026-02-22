@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import ClientMessageForm from "../../client-message-form";
-import Container from "../../container";
+import ClientMessageForm from "../../components/organisms/contact-us-form";
+import Container from "../../components/molecules/container";
 const Contact = () => {
   return (
     <section
