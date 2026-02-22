@@ -34,7 +34,7 @@ const HomeHero = () => {
             className="absolute inset-0 h-full w-full"
           >
             <Image
-              src={images[currentIndex]}
+              src="https://gioaban.github.io/pangasinan//images/cover_page/hundred_island.jpg"
               alt="Pangasinan Destination"
               fill
               priority
