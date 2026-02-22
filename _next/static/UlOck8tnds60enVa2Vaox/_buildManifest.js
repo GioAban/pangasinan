@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/pangasinan-heritage//_next/:path+",
+        "destination": "/pangasinan-heritage/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
