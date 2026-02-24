@@ -33,7 +33,7 @@ const ClientMessageForm = () => {
       />
       <FileUploader label="Attachments (Optional)" id="attachment" />
       <div className="mt-4">
-        <Button variant="solid" className="w-full bg-blue-500 text-white">
+        <Button variant="blue" className="w-full">
           SEND MESSAGE
         </Button>
       </div>
