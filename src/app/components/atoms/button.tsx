@@ -1,16 +1,13 @@
 "use client";
-
 import LinkNext from "next/link";
 import { ReactNode } from "react";
-
 interface PrimaryButtonProps {
   href?: string;
   onClick?: () => void;
   children: ReactNode;
   className?: string;
-  variant?: "solid" | "outline" | "blue"; // Added "blue" here
+  variant?: "solid" | "outline" | "blue";
 }
-
 const PrimaryButton = ({
   href,
   onClick,
@@ -28,9 +25,7 @@ const PrimaryButton = ({
       "border-2 border-white/20 bg-transparent text-white hover:border-white hover:bg-white/10",
     blue: "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]",
   };
-
   const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${className}`;
-
   if (href) {
     return (
       <LinkNext href={href} className={combinedStyles}>
@@ -38,7 +33,6 @@ const PrimaryButton = ({
       </LinkNext>
     );
   }
-
   return (
     <button onClick={onClick} className={combinedStyles}>
       {children}
