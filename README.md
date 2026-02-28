@@ -12,6 +12,7 @@ git remote set-url origin https://github.com/GioAban/pangasinan.git
 
 
 
+
 git init
 git add README.md
 git commit -m "first commit"
